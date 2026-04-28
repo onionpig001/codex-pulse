@@ -1,9 +1,9 @@
 ---
-name: token-status
-description: Show Codex token usage, live rate limits, and /status-style session information from the command line.
+name: codex-pulse
+description: Monitor Codex usage, live rate limits, and /status-style session information from the command line.
 ---
 
-# Token Status
+# Codex Pulse
 
 Use this skill when the user asks for Codex token usage, live CLI usage display,
 rate-limit status, or `/status`-style information.
@@ -11,20 +11,20 @@ rate-limit status, or `/status`-style information.
 Prefer the bundled script from this plugin:
 
 ```bash
-node ../../scripts/codex-token-status
-node ../../scripts/codex-token-status statusline
-node ../../scripts/codex-token-status watch -i 10
-node ../../scripts/codex-token-status json
+node ../../scripts/codex-pulse
+node ../../scripts/codex-pulse statusline
+node ../../scripts/codex-pulse watch -i 10
+node ../../scripts/codex-pulse json
 ```
 
 If the command is installed or symlinked into `PATH`, these aliases are also
 available:
 
 ```bash
-codex-token-status
-codex-token-status statusline
-codex-token-status watch -i 10
-codex-token-status json
+codex-pulse
+codex-pulse statusline
+codex-pulse watch -i 10
+codex-pulse json
 ```
 
 The command reads:

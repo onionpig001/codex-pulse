@@ -13,15 +13,15 @@ const AUTH_FILE = path.join(CODEX_HOME, "auth.json");
 const CONFIG_FILE = path.join(CODEX_HOME, "config.toml");
 
 function usage() {
-  console.log(`codex-token-status
+  console.log(`codex-pulse
 
 Usage:
-  codex-token-status                 Show /status-style snapshot
-  codex-token-status status          Show /status-style snapshot
-  codex-token-status statusline      Print compact one-line summary
-  codex-token-status watch [-i SEC]  Refresh in place every SEC seconds
-  codex-token-status json            Print collected JSON
-  codex-token-status help
+  codex-pulse                 Show /status-style snapshot
+  codex-pulse status          Show /status-style snapshot
+  codex-pulse statusline      Print compact one-line summary
+  codex-pulse watch [-i SEC]  Refresh in place every SEC seconds
+  codex-pulse json            Print collected JSON
+  codex-pulse help
 
 Data sources:
   - Codex app-server account/rateLimits/read for current 5h/weekly limits
@@ -225,7 +225,7 @@ function requestRateLimits(timeoutMs = 12000) {
     });
 
     send(1, "initialize", {
-      clientInfo: { name: "codex-token-status", title: "Codex Token Status", version: "0.1.0" },
+      clientInfo: { name: "codex-pulse", title: "Codex Pulse", version: "0.1.0" },
       capabilities: { experimentalApi: true },
     });
   });
@@ -494,6 +494,6 @@ async function main() {
 }
 
 main().catch((err) => {
-  console.error(`codex-token-status: ${err.message}`);
+  console.error(`codex-pulse: ${err.message}`);
   process.exit(1);
 });
