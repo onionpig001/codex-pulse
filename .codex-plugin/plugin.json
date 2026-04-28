@@ -1,0 +1,38 @@
+{
+  "name": "token-status",
+  "version": "0.1.0",
+  "description": "Show Codex token usage, live rate limits, and /status-style session information in the terminal.",
+  "author": {
+    "name": "fuweimin",
+    "email": "icewoo2@hotmail.com",
+    "url": "https://github.com/onionpig001"
+  },
+  "homepage": "https://github.com/onionpig001/token-status",
+  "repository": "https://github.com/onionpig001/token-status",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "tokens",
+    "status",
+    "rate-limits"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Token Status",
+    "shortDescription": "Show Codex token usage and /status details in the terminal.",
+    "longDescription": "A utility plugin for Codex token accounting. It reads live rate limits through Codex app-server, session token_count events, and local session metadata to print a /status-style view or compact status line.",
+    "developerName": "fuweimin",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Interactive"
+    ],
+    "websiteURL": "https://github.com/onionpig001/token-status",
+    "defaultPrompt": [
+      "Show my Codex token status.",
+      "Start a live Codex token usage monitor.",
+      "Print a compact Codex statusline."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
